@@ -11,66 +11,65 @@
 </head>
 <body>
     <div class="container">
-        
-        <!-- <div class="campo"> -->
-            <!-- <div class="campo-cabera"> -->
                 <img id="volver" onclick="clickVolver()" src="../img/izquierda.png" alt="volver">
                 <input type="checkbox" name="" id="" class="toggle-btn">
-            <!-- </div> -->
-            <div class="login">
-                <form action="" method="post">
+            <div class="login" id="login">
+                <form action="" method="post" id="login-form">
                     
                     <div class="campo-email">
                         <label for="">Correo</label>
-                        <input type="email" name="" id="" placeholder="Ingrese su email" class="input">
+                        <input type="email" name="" id="login-email" placeholder="Ingrese su email" class="input" required>
                         
                     </div>
         
                     <div class="campo-password">
                         <label for="">Contraseña</label>
-                        <input type="password" name="" id="" placeholder="Ingrese su Contraseña" class="input">
+                        <input type="password" name="" id="login-password" placeholder="Ingrese su Contraseña" class="input"  required>
         
                     </div>
-                    
-                <button class="btn">Ingresar</button>
+                   
+                    <div class="div-btn">
+                        <button class="btn" onclick="clickIngresar()">Ingresar</button>
+                    </div>
     
-                <span class="texto-pie">Usuario Nuevo? <a href="#" id="unete">Unete ahora</a></span>
+                <span class="texto-pie">Usuario Nuevo? <a href="" id="unete">Unete ahora</a></span>
                 
             </form>
                 </div>
-               
-
+            
             <div class="sign-up">
-                <form action="" method="post">
+                <form action="" method="post" id="sign-form">
 
                     <div class="campo-name">
                         <label for="">Nombre</label>
-                        <input type="text" name="" id="" placeholder="Ingrese su nombre y apellido" class="input">
+                        <input type="text" name="" id="sign-name" placeholder="Ingrese su nombre y apellido" class="input" >
                         
                     </div>
         
                     <div class="campo-email">
                         <label for="">Correo</label>
-                        <input type="email" name="" id="" placeholder="Ingrese su Contraseña" class="input">
+                        <input type="email" name="" id="sign-email" placeholder="Ingrese su Contraseña" class="input" >
         
                     </div>
     
                     <div class="campo-password">
                         <label for="">Contraseña</label>
-                        <input type="password" name="" id="" placeholder="Ingrese su Contraseña" class="input">
+                        <input type="password" name="" id="sign-password" placeholder="Ingrese su Contraseña" class="input">
         
                     </div>
                     
-                <button class="btn">Registrar</button>
+                    <div class="div-btn">
+                        
+                        <button class="btn" id="btn" type="submit">Registrar</button>
+                        <p class="warnings" id="warnings"></p>
+
+                    </div>
     
-                <span class="texto-pie">Ya tienes cuenta? <a href="#">Ingresar</a></span>
+                <span class="texto-pie" id="texto-pie">Ya tienes cuenta? <a href="#">Ingresar</a></span>
 
                 </form>
                 
             </div>
-
-        <!-- </div> -->
-
 
     </div>
     <script src="script.js"></script>

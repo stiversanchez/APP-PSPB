@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP PSPB</title>
+    <link rel="stylesheet" href="/app/editarSeguridad/correo/style.css">
+</head>
+<body>
+    <div class="container" id="content">
+
+        <nav class="nav">
+            <div class="nav-div" id="nav-div">
+                <span class="nav-span" id="nav-span">
+                    <!-- <img class="nav-img" src="/img/menu.png" alt="menu"> -->
+                </span>
+            </div>
+            <div class="nav-container" >
+
+                <div class="nav-cabecera">
+                        <img class="cabecera-img" src="/img/usuario.png" alt="">
+                        <h3>Usuario</h3>
+                </div>
+
+    
+                <div class="boton-contenido">
+
+                    <li class="sesion-btn" id="li-sesion">
+                        <a  href="#">
+                            <img class="sesion-btn-img" src="/img/cerrar-sesion.png" alt="">
+                            <span>Cerrar sesión</span>
+                        </a>
+                    </li>
+                    
+                    <li class="modo" id="li-modo">
+                        <div class="sol-luna">
+                            <img class="luna icon" src="/img/luna.png" alt="luna">
+                            <img class="sol icon" src="/img/soleado.png" alt="sol">
+                        </div>
+                        <span class="modo-texto">Modo oscuro</span>
+                        
+                        <div class="toggle-switch" >
+                            <span id="btn-switch" class="switch" class="switch-before"></span>
+                        </div>
+                    </li>
+                </div>
+
+
+                
+            </div>
+        </nav>
+    </div>
+
+    <div  class="volverBtn" >
+        <span>
+            <img src="/img/izquierda.png" alt="">
+        </span>
+    </div>
+
+        <div class="div div-correo">
+            <form id="loanForm">
+            <div class="correo-actual correo ">
+                <label for="">Correo</label>
+                <input type="text" id="inputs">
+                <img src="/img/eliminar.png" alt="eliminar" id="img-eliminar">
+            </div>
+            
+            <div class="correo-respaldo correo">
+                <label for="">Respaldo</label>
+                <input type="text" id="inputs">
+                <img src="/img/eliminar.png" alt="eliminar" id="img-eliminar">
+            </div>
+            
+            <div >
+                <button class="btn-guardar" type="submit">Guardar cambios</button>
+            </div>
+        </form>
+        </div>
+
+    
+
+
+    <nav class="nav-footer" id="nav-footer">
+        <ul class="menu-links">
+            <li class="nav-link">
+                <img class="footer-img" src="/img/casa.png" alt="casa">
+            </li>
+            <li class="nav-link">
+                <img class="footer-img" src="/img/expediente.png" alt="simulacion">
+            </li>
+            <li class="nav-link">
+                <img class="footer-img" src="/img/curriculum.png" alt="usuario">
+            </li>
+            </ul>
+    </nav>
+</body>
+<script src="/app/script.js"></script>
+</html>
